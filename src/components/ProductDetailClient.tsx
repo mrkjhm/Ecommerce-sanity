@@ -82,7 +82,7 @@ export default function ProductDetailClient({ product, recommendations }: Props)
 
                     {/* Right Details */}
                     <div className="flex-1">
-                        <h1 className="text-[clamp(2rem,4vw,15rem)] font-semibold">{product.title}</h1>
+                        <h1 className="text-[clamp(2rem,4vw,4rem)] font-semibold">{product.title}</h1>
                         <div className="flex items-center mt-4 text-red-600">
                             {[...Array(4)].map((_, i) => (
                                 <AiFillStar key={i} />
