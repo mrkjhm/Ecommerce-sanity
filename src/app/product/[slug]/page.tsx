@@ -5,10 +5,11 @@ import { Product } from "../../../../lib/sanity";
 
 interface PageProps {
   params: { slug: string };
+  searchParams?: Record<string, string | string[] | undefined>;
 }
 
 export default async function ProductPage({ params }: PageProps) {
-  const { slug } = await params;
+  const { slug } = params;
 
   const product: Product | null = await fetchProductBySlug(slug);
   if (!product) return null;
