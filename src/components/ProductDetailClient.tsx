@@ -115,11 +115,11 @@ export default function ProductDetailClient({ product, recommendations }: Props)
                         </div>
 
                         <div className="flex items-center gap-4 mt-6">
-                            <button onClick={decQty} className="px-3 py-3 border">
+                            <button onClick={decQty} className="px-3 py-3 border cursor-pointer">
                                 <AiOutlineMinus />
                             </button>
                             <span className="px-4">{quantity}</span>
-                            <button onClick={incQty} className="px-3 py-3 border">
+                            <button onClick={incQty} className="px-3 py-3 border cursor-pointer">
                                 <AiOutlinePlus />
                             </button>
                         </div>

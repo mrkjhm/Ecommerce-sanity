@@ -74,7 +74,7 @@ export default function ProductList({ products }: Props) {
 
                                     <div className="mt-auto">
                                         <button
-                                            className="w-full bg-gray-500 py-3 hover:scale-105 duration-300 rounded-md text-white font-bold cursor-pointer"
+                                            className="w-full bg-gray-500 py-3 hover:scale-103 duration-300 rounded-md text-white font-bold cursor-pointer"
                                             onClick={() => addToCart(p, 1)}
                                         >
                                             Add to Cart

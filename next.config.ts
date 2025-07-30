@@ -2,17 +2,25 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    // allow Next.js Image to optimize assets from Sanity's CDN
-    domains: ["cdn.sanity.io"],
-    // or, for even tighter control, you can use remotePatterns:
-    // remotePatterns: [
-    //   {
-    //     protocol: "https",
-    //     hostname: "cdn.sanity.io",
-    //     port: "",
-    //     pathname: "/images/**",
-    //   },
-    // ],
+    // ✅ Allow Sanity image CDN
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        port: "",
+        pathname: "/images/**",
+      },
+    ],
+  },
+  // ✅ Optional: Enable React strict mode
+  reactStrictMode: true,
+
+  // ✅ Optional: Better builds & debugging
+  typescript: {
+    ignoreBuildErrors: false, // fail build if type errors
+  },
+  eslint: {
+    ignoreDuringBuilds: false, // fail build if lint errors
   },
 };
 

@@ -48,7 +48,7 @@ export default function FooterBanner({ heroBanner }: Props) {
             <p>{footer_banner.smallText}</p>
             <h3 className="text-[clamp(2rem,4vw,2rem)] font-bold w-[250px]">{footer_banner.midText}</h3>
             <Link href={`/product/${productSlug}`}>
-              <button type='button' className="px-6 py-3 bg-white text-gray-500 rounded-lg font-bold" >{footer_banner.buttonText}</button>
+              <button type='button' className="px-6 py-3 bg-white text-gray-500 rounded-lg font-bold cursor-pointer hover:scale-103 duration-300" >{footer_banner.buttonText}</button>
             </Link>
           </div>
 

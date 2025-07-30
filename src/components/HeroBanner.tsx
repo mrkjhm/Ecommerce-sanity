@@ -46,7 +46,7 @@ export default async function HeroBanner({ heroBanner }: Props) {
 
         <div className="flex lg:flex-row flex-col w-full lg:justify-between justify-start">
             <Link href={`/product/${productSlug}`}>
-              <button className="px-6 py-3 bg-red-800 font-bold text-white rounded-lg mb-5">
+              <button className="px-6 py-3 bg-red-800 font-bold text-white rounded-lg mb-5 cursor-pointer hover:scale-103 duration-300">
                 {hero_Banner.buttonText}
               </button>
             </Link>
