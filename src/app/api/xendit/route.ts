@@ -18,7 +18,7 @@ export async function POST(req: Request) {
                 payerEmail: email,
                 description: `Payment for ${name}`,
                 amount,
-                successRedirectUrl: "http://localhost:3000/success",
+                successRedirectUrl: "https://ecommerce-sanity-xandit.vercel.app/success",
             },
         });
 
