@@ -19,9 +19,9 @@ export default function ProductList({ products }: Props) {
             <div className="mx-auto container flex flex-col w-full justify-between">
                 <div className="text-center mb-10">
                     <h1 className="text-[clamp(2rem,10vw,4rem)] font-bold mb-3 text-center">
-                        Best Seller Products
+                       All Products
                     </h1>
-                    <p>Speaker There are many variations passengers</p>
+                    <p>Discover our latest collection, crafted to fit your needs.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-gray-300">
